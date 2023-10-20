@@ -42,7 +42,6 @@ Jitsi Meet is a libre software (Apache) WebRTC JavaScript app that uses Jitsi Vi
 * Official app website: <https://jitsi.org/>
 * Official user documentation: <https://jitsi.org/user-faq/>
 * Upstream app code repository: <https://github.com/jitsi/jitsi-meet>
-* YunoHost documentation for this app: <https://yunohost.org/app_jitsi>
 * Report a bug: <https://github.com/YunoHost-Apps/jitsi_ynh/issues>
 
 ## Developer info
