@@ -167,8 +167,7 @@ ynh_add_config --template="../conf/prosody.cfg.lua" --destination="/etc/prosody/
 chmod 644 "/etc/prosody/conf.avail/$domain.cfg.lua"
 ln -s "/etc/prosody/conf.avail/$domain.cfg.lua" "/etc/prosody/conf.d/$domain.cfg.lua"
 
-ynh_print_info --message=$(whoami)
-ynh_print_info --message=$(stat /var/lib/prosody)
+chown -R prosody:prosody /var/lib/prosody/
 
 echo | prosodyctl cert generate $domain
 ln -sf "/var/lib/prosody/$domain.key" "/etc/prosody/certs/$domain.key"
